@@ -41,15 +41,12 @@ h1,h2,h3,h4,h5,h6{
 h1{
   color: var(--mainText);
   font-family:"Playfair Display" Helvetica, sans-serif;
-
-  font-size: 82px;
   text-shadow: 4px 4px  #f5f5f5;
 }
 
 h2{
   color: var(--secondaryText);
   font-family: "Playfair Display", Arial, Sans-Serif;
-  font-size: 62px;
   text-shadow: 6px 6px #b9b6b6;
 }
 
@@ -68,24 +65,24 @@ img{
 
 
 h1{
-   font-size: 150px;
+   font-size: 8em;
 }
 
 h2{
-  font-size: 62px;
+  font-size: 3em;
 }
 
-h3{ font-size: 42px;
+h3{ font-size: 2em;
 
 
 }
 
 h4{
-  font-size: 36px;
+  font-size: 1em;
 }
 
 h5{
-   font-size: 24px;
+   font-size: 1em;
 }
 
 h6{
@@ -94,7 +91,7 @@ h6{
 }
 
 p{
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body{
@@ -286,15 +283,14 @@ margin: 10px 30px 40px 0;
   padding: 0;
 }
 
-.ctnz{
+.ctnz-card{
   background-color: var(--cardColor);
   display: flex;
   padding: 50px;
-  margin-left:20em;
+  margin-left:10em;
   max-width: 1140px;
   width: 770px;
   height: 300px;
-  z-index: 2;
 
 
 }
@@ -409,11 +405,13 @@ margin: 10px 30px 40px 0;
     text-align: center;
     position: absolute;
     top: 30%;
-    left: 20%;
+    left:15%;
     color: var(--mainBanner);
-    font-size: 20px;
-    margin: 10px;
+  
   }   
+  .nav-links{
+    width: 50%;
+  }
 
 }
 
@@ -458,7 +456,7 @@ margin: 10px 30px 40px 0;
 Landscape for mobiles and tablets
 */
 
-@media (min-width: 481px) and (max-width: 767px) and 
+@media (min-width: 481px) and (max-width: 768px) and 
 (orientation: landscape)  {
 
   /* CSS */
