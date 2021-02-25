@@ -40,7 +40,7 @@
 
     <div class="showacase-hero">
       <div class="hero-container">
-        <h1>Yade's Pets</h1>
+        <h1 class="hero-banner">Yade's Pets</h1>
         <div class="span-cntn">
           <span class="banner">Pet Care Specialist / Dog Walker</span>
         </div>
@@ -84,15 +84,14 @@
     </div>
 
     <div class="mst-ctn">
-      <div class="sch-ctn">
-        <div class="sch-header"><h2>Schedule a walk</h2></div>
+      <div class="ctn sch-ctn">
+        <h2>Schedule a walk</h2>
       </div>
 
-      <div class="bg-ctn">
+      <div class="ctn bg-ctn">
         <div class="flex-ctn">
           <div class="left">
             <p><b>Meet and Greet</b></p>
-
             <p>20min | Free</p>
           </div>
 
@@ -103,7 +102,7 @@
               etc. and for us to answer any questions ...
             </p>
             <div>
-              <form action="https://www.w3docs.com/">
+              <form action="">
                 <button class="sch-btn" type="submit">Book Now</button>
               </form>
             </div>
@@ -112,19 +111,21 @@
       </div>
     </div>
 
+    <div>
+      <h2>Yades Furbabies</h2>
+    </div>
     <!--Gallery-->
     <div class="glry-cntn">
       <div class="grly-grid">
-        <div>
-          <h2>Yades Furbabies</h2>
-        </div>
-        <div><img src="img/BB.jpg" alt="Blitz & Badger" /></div>
-        <div><img src="img/Zeke3.jpeg" alt="" /></div>
-        <div><img src="img/Logan.jpeg" alt="" /></div>
-        <div><img src="img/Teddy.Dolly2.jpeg" alt="" /></div>
-        <div><img src="img/Tumble.jpeg" alt="" /></div>
-        <div><img src="img/Logan2.jpeg" alt="" /></div>
+        <div><img class="pto" src="img/BB.jpg" alt="Blitz & Badger" /></div>
+        <div><img class="pto" src="img/Zeke3.jpeg" alt="" /></div>
+        <div><img class="pto" src="img/Logan.jpeg" alt="" /></div>
+        <div><img class="pto" src="img/Teddy.Dolly2.jpeg" alt="" /></div>
+        <div><img class="pto" src="img/Tumble.jpeg" alt="" /></div>
+        <div><img class="pto" src="img/Logan2.jpeg" alt="" /></div>
       </div>
+      <h1>My Google Map</h1>
+      <div id="map"></div>
     </div>
 
     <footer>
@@ -141,5 +142,16 @@
     </footer>
 
     <script src="app2.js"></script>
+    <script src="map.js"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS6ZvWPZGOYV_Cg4_HbAGDQBv-m9CadR0&callback=initMap"
+      type="text/javascript"
+    ></script>
+
+    <script src="./simple-map-embed.js"></script>
   </body>
 </html>
