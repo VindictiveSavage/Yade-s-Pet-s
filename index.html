@@ -12,6 +12,13 @@
     <link rel="stylesheet" type="text/css" href="style3.css" />
 
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
     />
@@ -84,64 +91,114 @@
     </div>
 
     <div class="mst-ctn">
-      <div class="ctn sch-ctn">
+      <div class="sch-ctn">
         <h2>Schedule a walk</h2>
       </div>
 
-      <div class="ctn bg-ctn">
-        <div class="flex-ctn">
-          <div class="left">
-            <p><strong>Meet and Greet</strong></p>
-            <p>20min | Free</p>
-          </div>
+      <div class="ctn">
+        <div class="bg-ctn">
+          <div class="flex-ctn">
+            <div class="left">
+              <p><strong>Meet and Greet</strong></p>
+              <p>20min | Free</p>
+            </div>
 
-          <div class="right">
-            <p>
-              This is a free visit done before any services start. It is for
-              everyone to get acquainted, for you to show us your pet’s routine,
-              etc. and for us to answer any questions ...
-            </p>
-            <div>
-              <form action="">
-                <button class="sch-btn" type="submit">Book Now</button>
-              </form>
+            <div class="right">
+              <p>
+                This is a free visit done before any services start. It is for
+                everyone to get acquainted, for you to show us your pet’s
+                routine, etc. and for us to answer any questions ...
+              </p>
+              <div>
+                <form action="">
+                  <button class="sch-btn" type="submit">Book Now</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div>
-      <h2 style="margin: 120px 130px">Yades Furbabies</h2>
-    </div>
     <!--Gallery-->
-    <section id="MS-G">
-      <img class="pto" src="img/BB.jpg" alt="Blitz & Badger" />
-      <img class="pto" src="img/Zeke3.jpeg" alt="" />
-      <img class="pto" src="img/Logan.jpeg" alt="" />
-      <img class="pto" src="img/Teddy.Dolly2.jpeg" alt="" />
-      <img class="pto" src="img/Tumble.jpeg" alt="" />
-      <img class="pto" src="img/Logan2.jpeg" alt="" />
-    </section>
+    <div class="fur-ctn">
+      <div class="fur">
+        <h2>Yades Furbabies</h2>
+      </div>
+    </div>
 
-    <h1>My Google Map</h1>
+    <div class="grid-gallery">
+      <figure class="gallery-frame">
+        <img src="img/Teddy.jpeg" alt="Teddy" class="pto" />
+      </figure>
+
+      <figure class="gallery-frame">
+        <img class="pto" src="img/BB.jpg" alt="Blitz & Badger" />
+      </figure>
+
+      <figure class="gallery-frame">
+        <img class="pto" src="img/Zeke3.jpeg" alt="" />
+      </figure>
+
+      <figure class="gallery-frame">
+        <img class="pto" src="img/Logan.jpeg" alt="" />
+      </figure>
+
+      <figure class="gallery-frame">
+        <img class="pto" src="img/Teddy.Dolly2.jpeg" alt="" />
+      </figure>
+
+      <figure class="gallery-frame">
+        <img class="pto" src="img/Tumble.jpeg" alt="" />
+      </figure>
+
+      <!--<figure class="gallery-frame">
+        <img class="pto" src="img/Logan2.jpeg" alt="" />
+      </figure> -->
+
+      <!--<figure class="gallery-frame">
+        <img class="pto" src="img/Logan3.jpeg" alt="Logan" />
+      </figure>   -->
+
+      <figure class="gallery-frame">
+        <img class="pto" src="img/Teddy.Dolly3.png" alt="Logan" />
+      </figure>
+
+      <!--- <figure class="gallery-frame">
+        <img class="pto" src="img/Zeke2.jpeg" alt="Logan" />
+      </figure> -->
+    </div>
+
     <div id="map"></div>
 
     <footer>
-      <h2>Contact Me</h2>
+      <div class="footer-content">
+        <h2>Yade's Pets</h2>
 
-      <p>Contact the author of this page:</p>
+        <p>Contact the author of this page:</p>
 
-      <address>
-        <a href="mailto:Yadespets@gmail.com">Yadespets@gmail.com</a><br />
-        <a href="tel:+12023798706">(202) 379-8706</a>
-      </address>
+        <ul class="socials">
+          <li>
+            <a href="https://www.instagram.com/yadespets/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+        </ul>
+      </div>
 
-      <p>&copy; 2020 Yadespets.com</p>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2021 Yadespets.com. designed by <span>Chris Washington</span>
+        </p>
+      </div>
     </footer>
 
     <script src="app2.js"></script>
     <script src="map.js"></script>
+    <script src="./simple-map-embed.js"></script>
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
@@ -150,7 +207,5 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS6ZvWPZGOYV_Cg4_HbAGDQBv-m9CadR0&callback=initMap"
       type="text/javascript"
     ></script>
-
-    <script src="./simple-map-embed.js"></script>
   </body>
 </html>
