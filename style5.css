@@ -1,0 +1,325 @@
+
+/*comment section*/
+
+/*.Add header class to headers
+.Work on making the columns look well for the about pic and text.
+.Fix nav burger on smaller to mid screens.  11/19/21
+*/
+
+
+
+
+
+
+:root {
+  --mainBg: #ffffff;
+  --secondaryBg: #f9ded3;
+
+  --mainText: #ffaa81;
+  --secondaryText: #35435d;
+  --btnText: #000000;
+
+  --mainSpancolor: #2e2e2e;
+  --main: #b5d4e1;
+
+  --mainBanner: #ffc1a3;
+
+  --cardColor: #d29593;
+  --secodaryCard: #ffe5d9;
+
+  --footerBar: #2e2e2e;
+
+  --ff-body: "noto sans", sans-serif;
+  --ff--heading: "Playfair-Display", sans-serif;
+
+  --fs-xl: clamp(2.5rem, 2vw + 1rem, 8rem);
+  --fs--600: 2rem;
+  --fs--500: 1.5rem;
+  --fs-400: 1rem;
+  --fs--300: 0.8rem;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--secondaryBg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+.header {
+  font-family: var(--ff--heading);
+  font-size: var(--fs--500);
+}
+
+.header2 {
+  font-family: var(--ff--heading);
+  font-size: var(--fs-400);
+  max-width: 380px;
+  margin-left: 2em;
+}
+
+
+h1 {
+  color: var(--mainText);
+  text-shadow: 4px 4px #f5f5f5;
+}
+
+h2 {
+  color: var(--secondaryText);
+  text-shadow: 6px 6px #b9b6b6;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  font-family: var(--ff-body);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  font-family: var(--ff-body);
+  width: 120px;
+  font-size: 1em;
+  margin: 2px 1.3em;
+  word-spacing: 5px;
+  color: var(--mainText);
+  text-shadow: 2px 2px var(--mainSpancolor);
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 5vh;
+  background-color: var(--mainBg);
+}
+
+.nav-links {
+  display: none;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 17.5em;
+}
+
+.burger div {
+  width: 25px;
+  height: 5px;
+  background-color: var(--mainText);
+  margin: 3px;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.showcase-hero {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/D1.jpg");
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.8;
+}
+
+.hero-container {
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+  text-align: center;
+  color: var(--mainBanner);
+  padding: 0;
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+.hero-title {
+  font-family: var(--ff--heading);
+  font-size: var(--fs-xl);
+}
+/*.span-cntn {
+max-width:700px;
+margin-bottom: 15px;
+ } */
+
+.banner {
+  /* background-color: Var(--mainSpancolor); */
+  font-size: var(--fs--300);
+  white-space: nowrap;
+  padding: 3px;
+  margin-left: 12px;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: var(--fs--400);
+  background-color: var(--mainText);
+  font-family: var(--ff--heading);
+  border-radius: 4em;
+  line-height: 1.2em;
+  width: 9.2em;
+  margin-top: 6px;
+}
+
+.grid-container {
+  padding-right: 0.625em;
+  padding-left: 0.625em;
+  max-width: 70.125em;
+}
+
+.abt-ctn {
+  display: grid;
+  justify-content: center;
+  max-width: 650px;
+  margin: 5em;
+}
+
+
+.abt-grid {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.abt-grid > * {
+  flex-basis: 100%;
+}
+
+
+/*
+.text-ctn {
+  display: 
+  width: 400px;
+
+
+
+
+} */
+
+
+.text-box {
+  margin: 0 auto;
+  padding: 2em;
+  text-align: left;
+  word-spacing: 2px;
+  line-height: 1;
+}
+
+.text-box p {
+  font-family: var(--ff-body);
+}
+
+.jai-ctn {
+  padding: 75px;
+  width: 350px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.sch-ctn h2 {
+  font-family: var(--ff--heading);
+  font-size: var(--ff--500);
+  margin-left: 5px;
+}
+
+
+.hdr-ctn{
+  max-width: 650px;
+  margin: 0 2em;
+}
+
+
+/*Media Ques*/
+
+/*640px*/
+@media (min-width: 40em) {
+  :root {
+    --fs--xl: clamp(2.5rem, 2vw + 1rem, 12rem);
+    --fs--600: 3rem;
+    --fs--400: 1.125rem;
+  }
+
+@media (min-width: 35em) {
+  .abt-grid {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .jai-ctn {
+    width: 600px;
+  }
+}
+
+/*@media(min-width: 500px){
+.abt-grid{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  max-width: 800px;
+  margin: 10px;
+}
+*/
+
+/*
+  /* CSS */
+
+/*.logo {
+    font-family: "Playfair Display", Arial, Sans-Serif;
+    font-size: 1em;
+    word-spacing: 5px;
+    color: var(--mainText);
+    text-shadow: 2px 2px var(--mainSpancolor);
+    display: block;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 2vh;
+    background-color: var(--mainBg);
+  }
+
+  .nav-links li {
+    list-style: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    font-size: 1em;
+  }
+
+  nav-links a {
+    letter-spacing: 2px;
+    color: var(--mainText);
+  }
+
+  .nav-links a:hover {
+    color: var(--secondaryText);
+    transition: 0.5s;
+  }
+} 
+  */

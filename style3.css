@@ -37,14 +37,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", Playfair Display, Sans-serif;
+  font-family: "Playfair Display", Playfair Display, Com;
 }
 
 h1 {
   color: var(--mainText);
-  font-family: "Playfair Display" Helvetica, sans-serif;
   text-shadow: 4px 4px #f5f5f5;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 h2 {
@@ -65,7 +64,7 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 p,
