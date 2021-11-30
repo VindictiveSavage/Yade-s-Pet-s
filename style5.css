@@ -46,12 +46,33 @@ body {
   background-color: var(--secondaryBg);
 }
 
-* {
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+* , *::before, *::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: 0;
 }
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: normal;
+}
+
+
+/* Utilities*/
+
+
 
 .header {
   font-family: var(--ff--heading);
@@ -63,6 +84,16 @@ body {
   font-size: var(--fs-400);
   max-width: 380px;
   margin-left: 2em;
+}
+
+.hdr-ctn{
+  max-width: 650px;
+  margin: 0 2em;
+}
+
+.hdr-ctn2{
+  margin-bottom: 1em;
+  margin-right:4em;
 }
 
 
@@ -83,8 +114,9 @@ p {
   font-family: var(--ff-body);
 }
 
-img {
-  width: 100%;
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -179,11 +211,11 @@ margin-bottom: 15px;
   margin-top: 6px;
 }
 
-.grid-container {
+/*.grid-container {
   padding-right: 0.625em;
   padding-left: 0.625em;
   max-width: 70.125em;
-}
+} */
 
 .abt-ctn {
   display: grid;
@@ -218,6 +250,7 @@ margin-bottom: 15px;
 
 
 .text-box {
+ max-width: 450px;
   margin: 0 auto;
   padding: 2em;
   text-align: left;
@@ -236,17 +269,32 @@ margin-bottom: 15px;
   margin-bottom: 20px;
 }
 
-.sch-ctn h2 {
+
+
+
+.mst-ctn {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10vw;
+  
+  /*Responsiveness*/
+}
+
+  .pto {
+    margin-bottom:1em;
+  }
+
+/*.sch-ctn h2 {
   font-family: var(--ff--heading);
   font-size: var(--ff--500);
   margin-left: 5px;
-}
+}*/
 
 
-.hdr-ctn{
-  max-width: 650px;
-  margin: 0 2em;
-}
+
+
+
+
 
 
 /*Media Ques*/
